@@ -1,0 +1,18 @@
+{
+    "name": "lovelock/spt",
+    "description": "Simple PHP table generator.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frost Wong",
+            "email": "frostwong@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Spt\\": "src/"
+        }
+    },
+    "require": {}
+}
