@@ -8,6 +8,10 @@ You want to generate a table, so you have some field names for the table header,
 
 Now, you can generate the table by doing this:
 
+1. Fetch the latest library `composer require lovelock/spt`
+
+2. Use it in your code.
+
 ```php
 
 ...
