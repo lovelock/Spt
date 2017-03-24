@@ -30,6 +30,7 @@ class Table
     {
         $this->header = new TableHeader($fields);
         $this->body = new TableBody($data);
+        $this->body .= '</table>';
     }
 
     /**
