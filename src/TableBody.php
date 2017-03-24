@@ -65,9 +65,13 @@ class TableBody
      */
     private function makeBodyCell($value)
     {
-        if (!is_scalar($value)) {
+        if ($value && !is_scalar($value)) {
             echo 'Argument must be a scalar, a ' . gettype($value) . ' is given.';
-            die();
+            $value = (string)$value;
+        }
+
+        if ($value === '' || $value === null) {
+            $value = '-';
         }
         return '<td>' . $value . '</td>';
     }
