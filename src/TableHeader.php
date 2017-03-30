@@ -70,6 +70,6 @@ EOD;
             echo 'Argument must be a scalar, a ' . gettype($field) . ' is given.';
             die();
         }
-        return '<th>' . $field . '</th>';
+        return '<th style="white-space: nowrap">' . $field . '</th>';
     }
 }
